@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/length_medium"
+    android:paddingLeft="@dimen/length_large"
+    android:paddingRight="@dimen/length_large"
+    android:paddingBottom="@dimen/length_medium"
+    tools:context="com.heatedleek.android.ulah.ViewAssignmentFragment">
+
+    <EditText
+        android:id="@+id/assignment_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:text="Assignment Detail View"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/length_small"
+        android:layout_marginBottom="@dimen/length_small"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/assignment_due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/length_small"
+            android:text="@string/assignment_due_date_label" />
+
+        <CheckBox
+            android:id="@+id/assignment_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_small"
+            android:text="Is this assignment completed?" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/assignment_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/length_small"
+        android:hint="@string/assignment_details_label"/>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.heatedleek.android.ulah.ViewCourseFragment">
+
+    <LinearLayout
+        android:id="@+id/course_heading"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorAccent"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/course_day"
+            android:background="?attr/colorPrimary"
+            android:paddingTop="@dimen/length_small"
+            android:paddingLeft="@dimen/length_small"
+            android:paddingRight="@dimen/length_medium"
+            android:paddingBottom="@dimen/length_tiny"
+            android:layout_weight="1"
+            android:textColor="@color/light"
+            android:text="Course Title"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/course_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingTop="@dimen/length_tiny"
+            android:paddingRight="@dimen/length_large"
+            android:paddingBottom="@dimen/length_tiny"
+            android:paddingLeft="@dimen/length_large"
+            android:textColor="@color/light"
+            android:text="M"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

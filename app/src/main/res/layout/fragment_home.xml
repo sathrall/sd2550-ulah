@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.heatedleek.android.ulah.HomeFragment">
+
+    <TextView
+        android:id="@+id/home_courses_label"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingRight="@dimen/length_tiny"
+        android:paddingBottom="@dimen/length_mini"
+        android:paddingLeft="@dimen/length_tiny"
+        android:layout_marginTop="@dimen/length_small"
+        android:layout_marginRight="@dimen/length_tiny"
+        android:layout_marginLeft="@dimen/length_tiny"
+        android:text="@string/title_courses"
+        android:textSize="44dp" />
+
+    <ListView
+        android:id="@+id/home_courses_list"
+        android:layout_below="@+id/home_courses_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/length_small"
+        android:paddingTop="13dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingBottom="21dp" />
+
+</RelativeLayout>

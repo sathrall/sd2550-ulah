@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/length_medium"
+    android:paddingLeft="@dimen/length_large"
+    android:paddingRight="@dimen/length_large"
+    android:paddingBottom="@dimen/length_medium">
+
+
+    <EditText
+        android:id="@+id/assignment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/length_small"
+        android:hint="@string/assignment_title_label"/>
+
+    <Spinner
+        android:id="@+id/assignment_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/length_small"
+        android:hint="@string/assignment_course_number_label"/>
+
+    <Button
+        android:id="@+id/assignment_due_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/assignment_due_date_label"
+        android:layout_marginTop="@dimen/length_small" />
+
+    <EditText
+        android:id="@+id/assignment_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/length_small"
+        android:hint="@string/assignment_details_label"/>
+
+    <CheckBox
+        android:id="@+id/assignment_completed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is this assignment completed?"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/length_small" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/length_small">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/length_small"
+            android:layout_marginRight="@dimen/length_small"
+            android:background="#ffec3644"
+            android:textSize="24dp"
+            android:textColor="@color/light"
+            android:text="@string/add_dialog_cancel" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/length_small"
+            android:layout_marginRight="@dimen/length_small"
+            android:background="?attr/colorAccent"
+            android:textSize="24dp"
+            android:textColor="@color/light"
+            android:text="@string/add_dialog_submit" />
+
+    </LinearLayout>
+
+</LinearLayout>
